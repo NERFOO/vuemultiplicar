@@ -4,12 +4,14 @@ import router from './Router';
 
 var app = createApp(App);
 app.config.globalProperties.$filters = {
-    getTabla(numero) {
-        var dato = 0;
-        for(var i = 1; i < 11; i++) {
-            dato = numero * i;
-        }
-        return dato;
+    getMultiplicacion(num1, num2){
+        return  num1 * num2;
+    },
+    getOperacion(num1, num2){
+        return num1 + " * " + num2;
     }
+
 }
 app.use(router).mount('#app');
+
+

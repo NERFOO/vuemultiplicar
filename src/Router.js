@@ -1,13 +1,17 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeComponent from './components/HomeComponent.vue';
 import TablaMultiplicar from './components/TablaMultiplicar.vue';
+import TablaMultiplicarFilters from './components/TablaMultiplicarFilters.vue';
 
 const misRutas = [
     {
         path: "/", component: HomeComponent
     },
     {
-        path: "/tablamultiplicar", component: TablaMultiplicar
+        path: "/tablaMultiplicar", component: TablaMultiplicar
+    },
+    {
+        path: "/tablaMultiplicarFilters", component: TablaMultiplicarFilters
     }
 ]
 
